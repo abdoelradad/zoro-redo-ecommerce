@@ -7,13 +7,13 @@ const Hero = () => {
     <section className="pt-32 pb-48 md:py-0 md:h-[620px] overflow-hidden bg-primary/5 relative">
       <div className="container relative mx-auto">
         <Social />
-        <div className="absolute mx-auto text-lg font-semibold text-center -translate-x-1/2 border-b-[1px] border-black left-1/2 -top-10 md:hidden">
-          <span>call us: </span>
-          +020 201 322 322
-        </div>
+
         <div className="flex items-center justify-between pt-0 md:pt-20">
           {/* text */}
-          <div className="w-full xl:max-w-[580px] flex flex-col justify-center items-start">
+          <div className="w-full xl:max-w-[580px] flex flex-col justify-center items-start gap-5">
+            <p className="block py-1 mx-auto text-lg font-semibold text-center text-black underline md:hidden">
+              call us: +20 761 232 134
+            </p>
             <h1 className="text-center md:text-left">
               "Good <span className="text-accent">Brands</span> Best Clothes in
               the city.

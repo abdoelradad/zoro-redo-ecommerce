@@ -41,11 +41,11 @@ const CartSideBar = () => {
 
             <>
               {cartCount === 0 ? (
-                <div className="flex flex-col items-center justify-center w-full h-[760px]">
+                <div className="flex flex-col items-center justify-center w-full h-[360px] ">
                   <h5 className="text-black/50">Your cart is empty</h5>
                 </div>
               ) : (
-                <ScrollArea className="h-[70vh] xl:h-[74vh] pr-4 mb-4">
+                <ScrollArea className="h-[50vh] pr-4 mb-4 ">
                   {cartDetails &&
                     Object.entries(cartDetails).map(([key, item]) => {
                       return <CartItem item={item} key={key} />;
@@ -56,7 +56,7 @@ const CartSideBar = () => {
             {cartCount > 0 && (
               <div>
                 <div className="flex justify-between font-semibold">
-                  <div className="mb-5 uppercase ">Total</div>
+                  <div className="mb-2 uppercase ">Total</div>
                   <div>${totalPrice}</div>
                 </div>
                 <CheckoutBtn />
