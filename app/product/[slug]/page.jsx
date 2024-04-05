@@ -1,4 +1,3 @@
-"use client";
 import { client, urlFor } from "@/app/lib/sanity";
 import Image from "next/image";
 import AddToCartBtn from "@/components/AddToCartBtn";
